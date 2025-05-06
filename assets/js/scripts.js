@@ -1,7 +1,7 @@
 const featuredGames = [
   {
     title: "From Nothing",
-    image: "assets/images/From Nothing.png",
+    image: "assets/images/From-Nothing.png",
     link: "pages/games/game1.html",
     description: "Climb the Ladder. Rule the Streets. Build Your Empire.",
   },
