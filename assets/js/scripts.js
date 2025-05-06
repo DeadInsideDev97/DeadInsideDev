@@ -1,13 +1,13 @@
 const featuredGames = [
   {
     title: "From Nothing",
-    image: "assets/images/From-Nothing.png",
+    image: "./assets/Images/From-Nothing.png",
     link: "pages/games/game1.html",
     description: "Climb the Ladder. Rule the Streets. Build Your Empire.",
   },
   {
     title: "Conviction",
-    image: "assets/images/conviction.png",
+    image: "./assets/Images/conviction.png",
     link: "pages/games/game2.html",
     description: "Uncover the truth in a dystopian city.",
   },
