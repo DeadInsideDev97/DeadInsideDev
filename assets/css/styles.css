@@ -1,0 +1,248 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Clean body font */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+}
+
+section {
+    padding: 40px 20px; /* Adds breathing room around sections */
+}
+
+header {
+    background: linear-gradient(90deg, #ff00cc, #a000ff); /* Gradient background */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif; /* Bold, expressive font for headings */
+    font-size: 2rem;
+    color: #ff7700; /* Neon Purple for branding */
+    text-shadow: 0 0 10px #ff00cc, 0 0 20px #a000ff; /* Neon glow effect */
+    -webkit-text-stroke: 1px #000; /* Black outline */
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+header .logo:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+    box-shadow: 0 8px 15px rgba(255, 0, 204, 0.5); /* Neon Purple glow */
+    filter: brightness(1.2); /* Makes the logo slightly brighter */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #fff; /* White text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline effect */
+    background-color: #39ff14; /* Bright Green for hover */
+    color: #000; /* Black text on hover */
+    text-shadow: 0 0 10px #00ff66; /* Neon Green glow */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #8000ff; /* Neon Purple */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.game-logo {
+    text-align: center; /* Centers the logo */
+    margin: 20px 0; /* Adds spacing above and below the logo */
+}
+
+.game-logo img {
+    max-width: 300px; /* Scales the logo to a reasonable size */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+    transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+.game-logo img:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
+.game-card {
+    background: #000; /* Black background */
+    border: 1px solid #808080; /* Grayscale border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}
+
+.game-card h3 {
+    margin: 0 0 10px;
+    color: #fff; /* White text */
+}
+
+.game-card p {
+    margin: 0;
+    color: #fff; /* White text */
+}
+
+h2 {
+    color: #ff00cc; /* Neon Purple for headings */
+}
+button {
+    background-color: #00ff66; /* Neon Green for buttons */
+    color: #000; /* Black text */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffff00; /* Vibrant Yellow for hover */
+    color: #000; /* Black text */
+    transform: scale(1.1); /* Slight scale-up on hover */
+}
+
+/* Featured Games Section */
+.featured-games {
+    margin-top: 20px; /* Adds space above the game tiles */
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featured-games li {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 300px;
+    text-align: center;
+}
+
+.featured-games img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    transition: transform 0.3s ease;
+}
+
+.featured-games img:hover {
+    transform: scale(1.1) rotate(2deg); /* Slight tilt and scale-up */
+    box-shadow: 0 8px 15px rgba(255, 0, 204, 0.5); /* Neon Purple glow */
+}
+
+.featured-games p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #333;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        border-radius: 5px;
+      }
+    
+      nav ul.active {
+        display: flex;
+      }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .featured-games li {
+        flex: 1 1 100%;
+    }
+    .hamburger {
+        display: flex;
+      }
+}
